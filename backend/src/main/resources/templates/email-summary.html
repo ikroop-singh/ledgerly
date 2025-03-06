@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Monthly Financial Summary</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Billabong&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .header img {
+            width: 150px;
+        }
+
+        .header .logo {
+    font-family: 'Billabong', cursive, sans-serif;
+    font-size: 28px;
+    background: linear-gradient(to right, #facc15, #ec4899, #8b5cf6);
+    color:white;
+}
+
+
+        .content {
+            padding: 20px 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .summary-box {
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 16px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 class="logo">Ledgerly</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <p>Dear <strong th:text="${name}"></strong>,</p>
+
+        <p>Hope you're doing well! Here’s your **monthly financial summary** for <strong th:text="${month}"></strong>. We’ve put together a quick breakdown of your income, expenses, and category-wise spending to help you stay on top of your finances.</p>
+
+        <!-- Monthly Income & Expenses -->
+        <div class="summary-box">
+            <div class="summary-item">
+                <span><strong>Total Income: </strong> </span>
+                <span><strong style="color: green;">$<span th:text="${income}"></span></strong></span>
+            </div>
+            <div class="summary-item">
+                <span><strong>Total Expenses: </strong> </span>
+                <span><strong style="color: red;">$<span th:text="${expenses}"></span></strong></span>
+            </div>
+            <div class="summary-item">
+                <span><strong>Net income: </strong></span>
+                <span><strong style="color: green;">$<span th:text="${netIncome}"></span></strong></span>
+            </div>
+        </div>
+
+        <!-- Category-wise Breakdown -->
+        <h3>Category-wise Summary:</h3>
+
+        <div class="summary-box">
+            <div th:each="category : ${userCategorySummary}">
+                <div class="summary-item">
+                    <span><strong th:text="${category.key} +': '"> </strong> </span>
+                    <span>
+                            <span style="color: green;">+$<span th:text="${category.value['INCOME']!=null ? category.value['INCOME'] : 0.00}"></span></span> /
+                            <span style="color: red;">-$<span th:text="${category.value['EXPENSE']!=null ? category.value['EXPENSE'] :0.00}"></span></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <p>We encourage you to review your spending habits and make informed financial decisions. If you have any questions, feel free to reach out to us.</p>
+
+        <p>Thank you for choosing **Ledgerly** to manage your finances!</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2025 Ledgerly. All rights reserved.</p>
+        <p><a href="https://ledgerly.com">Visit our website</a> | <a href="mailto:support@ledgerly.com">Contact Support</a></p>
+    </div>
+</div>
+</body>
+</html>
