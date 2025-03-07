@@ -1,0 +1,34 @@
+# Ledgerly
+
+Ledgerly is an AI-powered financial management platform that helps you track, analyze, and optimize your spending with real-time insights.
+
+## Features
+
+### Application Features
+* **Income and expenses** – Track your income and expenses with an AI-powered financial management platform.
+* **Budget management** – Manage and set your budget.
+* **Dashboard insights** – View your spending and earnings with categorized expenses and financial reports.
+* **Multiple account support** – Manage multiple accounts in one place.
+* **Smart receipt scanner** – Extract data automatically from receipts and bills using advanced AI technology.
+* **Automated insights** – Get automated insights through monthly emails.
+
+## Tech Stack
+
+### Backend (Spring Boot + MySQL)
+* **Spring Boot (Java)**
+* **Spring Security** (JWT authentication and role-based authorization)
+* **Hibernate** (ORM)
+* **Resilience4j** (Throttling)
+* **Thymeleaf** (Mail template)
+* **JavaMail** (Email notifications)
+* **Gemini API** (Receipt scanning and automated insights)
+
+### Frontend (Next.js + React)
+* **Tailwind CSS**
+* **Context API** (State management)
+* **ShadCN UI**
+* **Lucide React** (Icons)
+* **React Hook Form & Zod** (Form validation)
+* **Recharts** (Data visualization)
+* **Axios** (API calls)
+
