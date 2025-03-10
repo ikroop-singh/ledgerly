@@ -32,3 +32,28 @@ Ledgerly is an AI-powered financial management platform that helps you track, an
 * **Recharts** (Data visualization)
 * **Axios** (API calls)
 
+## Application screenshots
+### Landing page
+![landing page](https://github.com/ikroop-singh/ledgerly/blob/dbe72853e3d4c9b25dae1eba732777849da64140/images/landing.png)
+
+### Sigin page
+![account page](https://github.com/ikroop-singh/ledgerly/blob/dbe72853e3d4c9b25dae1eba732777849da64140/images/sigin.png)
+
+### Signup page
+![account page](https://github.com/ikroop-singh/ledgerly/blob/dbe72853e3d4c9b25dae1eba732777849da64140/images/signup.png)
+
+### Dashboard
+![dashboard page](https://github.com/ikroop-singh/ledgerly/blob/dbe72853e3d4c9b25dae1eba732777849da64140/images/dashboard.png)
+
+### Transaction form
+![form](https://github.com/ikroop-singh/ledgerly/blob/dbe72853e3d4c9b25dae1eba732777849da64140/images/transaction_form.png)
+
+### Account page
+![account page](https://github.com/ikroop-singh/ledgerly/blob/dbe72853e3d4c9b25dae1eba732777849da64140/images/account_page.png)
+
+
+
+
+
+
+
