@@ -51,6 +51,9 @@ Ledgerly is an AI-powered financial management platform that helps you track, an
 ### Account page
 ![account page](https://github.com/ikroop-singh/ledgerly/blob/dbe72853e3d4c9b25dae1eba732777849da64140/images/account_page.png)
 
+### Monthly mail
+![mail](https://github.com/ikroop-singh/ledgerly/blob/7e16688a855a527b5f2cb5b782fc768b52a4490e/images/mail.png)
+
 
 
 
